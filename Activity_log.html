@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Log</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <form action ="/Confirmation.html">
+        <label for = "User"> User name</label>
+        <input required name="User" type="text" id = "User">
+        <label for = "activity"> Short description of activity</label>
+        <input required name="activity" type="text" id = "activity">
+        <label for = "date">Date of activity</label>
+        <input required name="timestham" type="datetime" id = "date">
+        <label for = "service">Tasked by:</label>
+        <select name = "service" id = "service">
+<option value = "Great North Air Ambulance Service">GNAAS</option>
+<option value = "NHNS Lothian">NHSL</option>
+<option value = "Joint Hospital Group North (+DMS)">JHGN</option>
+<option value = "Royal Navy">RN</option>
+</select></p>
+        How did this job go?
+        <input type="radio" name="experiance" value="great"> great
+        <input type="radio" name="experiance" value="ok"> ok
+        <input type="radio" name="experiance" value="awful"> awful</p>
+        <label for="reflections" >Refelctions</label>
+        <textarea name = "reflections" id="reflections" cols="50" rows = "2" placeholder ="Coment here on how things went, how would or could they go better if you did this again?"></textarea>
+        <label for = "email">Email adress</label>
+        <input autocomplete="off" name = "email" type = "email" id = "email"> 
+        <button type="submit">Submit to server</button>
+    </form>
+</body>
+</html>
